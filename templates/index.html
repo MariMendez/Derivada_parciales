@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema de Temperatura</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Problema de Temperatura en una Montaña</h1>
+        <form action="/resultado" method="POST">
+            <label for="x">Latitud (x):</label>
+            <input type="number" step="any" id="x" name="x" value="1" required>
+            
+            <label for="y">Longitud (y):</label>
+            <input type="number" step="any" id="y" name="y" value="2" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
+</body>
+</html>

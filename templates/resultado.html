@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado del Cálculo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados del Cálculo</h1>
+        
+        <h2>Puntos que se deben de mover para evitar el riesgo de congelacion lo mas rapido posible:</h2>
+        <p>Componente x del gradiente: {{ gradiente_x }}</p>
+        <p>Componente y del gradiente: {{ gradiente_y }}</p>
+
+        <h2>Si se mueven en una direccion equivocada de manera que la lomgitud decrece la matad de lo que se aumenta la latitud, aumenta o disminuira
+            el riesgo de hipotermia:
+        </h2>
+        <p>{{ cambio_temp > 0 and "Aumenta" or "Disminuye" }}: {{ cambio_temp }}</p>
+
+        <h2>puntos que se debne de mover para que la temperatura permanezca constante:</h2>
+        <p>Dirección en x: {{ direccion_constante_x }}</p>
+        <p>Dirección en y: {{ direccion_constante_y }}</p>
+
+        <a href="/">Volver a calcular</a>
+    </div>
+</body>
+</html>
